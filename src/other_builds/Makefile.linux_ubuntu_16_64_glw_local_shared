@@ -5,7 +5,7 @@ MRI_SHARED = $(SYSTEM_TYPE)
 USE_ZLIB = -DHAVE_ZLIB
 LZLIB    = -lz
 USE_GIFTI = -DHAVE_GIFTI
-LGIFTI    = -lexpat  #/usr/lib64/libexpat.a
+LGIFTI    = -lexpat  #-lexpat
 
 # use linux-style R_io.so building
 R_IO_MODIFY_LINUX = yes

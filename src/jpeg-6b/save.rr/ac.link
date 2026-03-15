@@ -1,0 +1,3 @@
+${CC-cc} -o conftest $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS
+CC /usr/bin/gcc -fPIC CFLAGS CPPFLAGS LDFLAGS -L. -L/usr/lib64 LIBS
+/usr/bin/gcc -fPIC -o conftest -L. -L/usr/lib64 conftest.c

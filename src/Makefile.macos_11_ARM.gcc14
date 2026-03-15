@@ -35,8 +35,8 @@
 # if XQuartz doesn't include libXm (as it used to), then use this
 
 #ln -s /usr/local/Cellar/openmotif/2.3.8_1/lib/libXm.a /usr/local/lib/libXm.a
-#ln -s /usr/local/Cellar/jpeg/9d/lib/libjpeg.a /usr/local/lib/libjpeg.a
-#ln -s /usr/local/Cellar/jpeg/9d/lib/libjpeg.a /usr/local/lib/libjpeg.9.a
+#ln -s /usr/local/Cellar/jpeg/9d/lib/-ljpeg /usr/local/lib/-ljpeg
+#ln -s /usr/local/Cellar/jpeg/9d/lib/-ljpeg /usr/local/lib/libjpeg.9.a
 #ln -s /usr/local/Cellar/netpbm/10.86.18/include/netpbm/pgm.h /usr/local/include/pgm.h
 
 # ***** for MAC ARM-M1 and 10.15 clang x86_64 builds    09 Mar 2021 [drg]

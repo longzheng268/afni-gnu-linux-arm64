@@ -21,7 +21,7 @@ LDPYTHON    = -lpython2.7
 XROOT   = /usr/X11R6
 XROOT_L = -L$(XROOT)/lib
 
-XLIBS = /sw/lib/libXm.a /sw/lib/libjpeg.a -lXt
+XLIBS = /sw/lib/libXm.a /sw/lib/-ljpeg -lXt
 
 # ----------------------------------------------------------------------
 

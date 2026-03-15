@@ -11,7 +11,7 @@ SYSTEM_NAME = linux_ubuntu_12_64
 USE_ZLIB = -DHAVE_ZLIB
 LZLIB    = -lz
 USE_GIFTI = -DHAVE_GIFTI
-LGIFTI    = -lexpat  #/usr/lib64/libexpat.a
+LGIFTI    = -lexpat  #-lexpat
 
 # default to having these off
 # D_USE_ACML = -DUSE_ACML

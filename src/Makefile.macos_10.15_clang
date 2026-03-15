@@ -20,8 +20,8 @@
 #ln -s /usr/local/Cellar/openmotif/2.3.8_1/lib/libXm.4.dylib /usr/local/lib/libXm.4.dylib
 # if XQuartz doesn't include libXm (as it used to), then use this
 #ln -s /usr/local/Cellar/openmotif/2.3.8_1/lib/libXm.a /usr/local/lib/libXm.a
-#ln -s /usr/local/Cellar/jpeg/9d/lib/libjpeg.a /usr/local/lib/libjpeg.a
-#ln -s /usr/local/Cellar/jpeg/9d/lib/libjpeg.a /usr/local/lib/libjpeg.9.a
+#ln -s /usr/local/Cellar/jpeg/9d/lib/-ljpeg /usr/local/lib/-ljpeg
+#ln -s /usr/local/Cellar/jpeg/9d/lib/-ljpeg /usr/local/lib/libjpeg.9.a
 #ln -s /usr/local/Cellar/netpbm/10.86.18/include/netpbm/pgm.h /usr/local/include/pgm.h
 
 # I've removed libbz2.dylib from the installed dylib list because it doesn't

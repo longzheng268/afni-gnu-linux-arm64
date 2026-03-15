@@ -9,7 +9,7 @@ SYSTEM_TYPE = Linux
 USE_ZLIB = -DHAVE_ZLIB
 LZLIB    = -lz
 USE_GIFTI = -DHAVE_GIFTI
-LGIFTI    = -lexpat  #/usr/lib64/libexpat.a
+LGIFTI    = -lexpat  #-lexpat
 
 # -----------------------------------
 #  # use shared libriaries (libmri.so)?

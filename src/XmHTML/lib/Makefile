@@ -25,7 +25,7 @@
 # Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.         #
 ##############################################################################
 #
-LIBRARY=libXmHTML.a
+LIBRARY=-lXmHTML
 
 # Target to make
 TARGET=$(LIBRARY)

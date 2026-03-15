@@ -1,0 +1,222 @@
+/bin/rm -f SUMA/libSUMA.a libSUMA.a SUMA/libGLws.a libGLws.a
+if [ -f SUMA/suma ]; then /bin/rm -f SUMA/suma; fi;
+if [ -f suma ]; then /bin/rm -f suma; fi;
+if [ -f SUMA/MakeColorMap ]; then /bin/rm -f SUMA/MakeColorMap; fi;
+if [ -f MakeColorMap ]; then /bin/rm -f MakeColorMap; fi;
+if [ -f SUMA/ROI2dataset ]; then /bin/rm -f SUMA/ROI2dataset; fi;
+if [ -f ROI2dataset ]; then /bin/rm -f ROI2dataset; fi;
+if [ -f SUMA/3dVol2Surf ]; then /bin/rm -f SUMA/3dVol2Surf; fi;
+if [ -f 3dVol2Surf ]; then /bin/rm -f 3dVol2Surf; fi;
+if [ -f SUMA/3dSurf2Vol ]; then /bin/rm -f SUMA/3dSurf2Vol; fi;
+if [ -f 3dSurf2Vol ]; then /bin/rm -f 3dSurf2Vol; fi;
+if [ -f SUMA/SurfMeasures ]; then /bin/rm -f SUMA/SurfMeasures; fi;
+if [ -f SurfMeasures ]; then /bin/rm -f SurfMeasures; fi;
+if [ -f SUMA/SurfFWHM  ]; then /bin/rm -f SUMA/SurfFWHM ; fi;
+if [ -f SurfFWHM  ]; then /bin/rm -f SurfFWHM ; fi;
+if [ -f ScaleToMap ]; then /bin/rm -f ScaleToMap; fi;
+if [ -f SUMA/ScaleToMap ]; then /bin/rm -f SUMA/ScaleToMap; fi;
+if [ -f CompareSurfaces  ]; then /bin/rm -f CompareSurfaces ; fi;
+if [ -f SUMA/CompareSurfaces  ]; then /bin/rm -f SUMA/CompareSurfaces ; fi;
+if [ -f ConvertSurface ]; then /bin/rm -f ConvertSurface; fi;
+if [ -f SUMA/ConvertSurface ]; then /bin/rm -f SUMA/ConvertSurface; fi;
+if [ -f ConvertDset ]; then /bin/rm -f ConvertDset; fi;
+if [ -f SUMA/ConvertDset ]; then /bin/rm -f SUMA/ConvertDset; fi;
+if [ -f SurfClust ]; then /bin/rm -f SurfClust; fi;
+if [ -f SUMA/SurfClust ]; then /bin/rm -f SUMA/SurfClust; fi;
+if [ -f IsoSurface ]; then /bin/rm -f IsoSurface; fi;
+if [ -f SUMA/IsoSurface ]; then /bin/rm -f SUMA/IsoSurface; fi;
+if [ -f ConvexHull ]; then /bin/rm -f ConvexHull; fi;
+if [ -f SUMA/ConvexHull ]; then /bin/rm -f SUMA/ConvexHull; fi;
+if [ -f SUMA_glxdino ]; then /bin/rm -f SUMA_glxdino; fi;
+if [ -f SUMA_paperplane ]; then /bin/rm -f SUMA_paperplane; fi;
+if [ -f SUMA/SUMA_glxdino ]; then /bin/rm -f SUMA/SUMA_glxdino; fi;
+if [ -f SUMA/SUMA_paperplane ]; then /bin/rm -f SUMA/SUMA_paperplane; fi;
+if [ -f SUMA_pixmap2eps ]; then /bin/rm -f SUMA_pixmap2eps; fi;
+if [ -f SUMA/SUMA_pixmap2eps ]; then /bin/rm -f SUMA/SUMA_pixmap2eps; fi;
+if [ -f SurfaceMetrics ]; then /bin/rm -f SurfaceMetrics; fi;
+if [ -f SUMA/SurfaceMetrics ]; then /bin/rm -f SUMA/SurfaceMetrics; fi;
+if [ -f inspec ]; then /bin/rm -f inspec; fi;
+if [ -f SUMA/inspec ]; then /bin/rm -f SUMA/inspec; fi;
+if [ -f quickspec ]; then /bin/rm -f quickspec; fi;
+if [ -f SUMA/quickspec ]; then /bin/rm -f SUMA/quickspec; fi;
+if [ -f FSread_annot ]; then /bin/rm -f FSread_annot; fi;
+if [ -f SUMA/FSread_annot ]; then /bin/rm -f SUMA/FSread_annot; fi;
+if [ -f SurfPatch ]; then /bin/rm -f SurfPatch; fi;
+if [ -f SUMA/SurfPatch ]; then /bin/rm -f SUMA/SurfPatch; fi;
+if [ -f SurfQual ]; then /bin/rm -f SurfQual; fi;
+if [ -f SUMA/SurfQual ]; then /bin/rm -f SUMA/SurfQual; fi;
+if [ -f SurfSmooth ]; then /bin/rm -f SurfSmooth; fi;
+if [ -f SUMA/SurfSmooth ]; then /bin/rm -f SUMA/SurfSmooth; fi;
+if [ -f MapIcosahedron ]; then /bin/rm -f MapIcosahedron; fi;
+if [ -f SUMA/MapIcosahedron ]; then /bin/rm -f SUMA/MapIcosahedron; fi;
+if [ -f CreateIcosahedron ]; then /bin/rm -f CreateIcosahedron; fi;
+if [ -f SUMA/CreateIcosahedron ]; then /bin/rm -f SUMA/CreateIcosahedron; fi;
+if [ -f SurfMesh ]; then /bin/rm -f SurfMesh; fi;
+if [ -f SUMA/SurfMesh ]; then /bin/rm -f SUMA/SurfMesh; fi;
+if [ -f SampBias ]; then /bin/rm -f SampBias; fi;
+if [ -f SUMA/SampBias ]; then /bin/rm -f SUMA/SampBias; fi;
+if [ -f 3dSkullStrip  ]; then /bin/rm -f 3dSkullStrip ; fi;
+if [ -f SUMA/3dSkullStrip  ]; then /bin/rm -f SUMA/3dSkullStrip ; fi;
+if [ -f BrainSkin  ]; then /bin/rm -f BrainSkin ; fi;
+if [ -f SUMA/BrainSkin  ]; then /bin/rm -f SUMA/BrainSkin ; fi;
+if [ -f SUMA/SurfLocalstat  ]; then /bin/rm -f SUMA/SurfLocalstat ; fi;
+if [ -f 3dCRUISEtoAFNI  ]; then /bin/rm -f 3dCRUISEtoAFNI ; fi;
+if [ -f SUMA/3dCRUISEtoAFNI  ]; then /bin/rm -f SUMA/3dCRUISEtoAFNI ; fi;
+if [ -f 3dBRAIN_VOYAGERtoAFNI  ]; then /bin/rm -f 3dBRAIN_VOYAGERtoAFNI ; fi;
+if [ -f SUMA/3dBRAIN_VOYAGERtoAFNI  ]; then /bin/rm -f SUMA/3dBRAIN_VOYAGERtoAFNI ; fi;
+if [ -f 3dSurfMask  ]; then /bin/rm -f 3dSurfMask ; fi;
+if [ -f SUMA/3dSurfMask  ]; then /bin/rm -f SUMA/3dSurfMask ; fi;
+if [ -f SurfToSurf   ]; then /bin/rm -f SurfToSurf  ; fi;
+if [ -f SUMA/SurfToSurf   ]; then /bin/rm -f SUMA/SurfToSurf  ; fi;
+if [ -f Surf2VolCoord    ]; then /bin/rm -f Surf2VolCoord   ; fi;
+if [ -f SUMA/Surf2VolCoord    ]; then /bin/rm -f SUMA/Surf2VolCoord   ; fi;
+if [ -f ROIgrow   ]; then /bin/rm -f ROIgrow  ; fi;
+if [ -f SUMA/ROIgrow   ]; then /bin/rm -f SUMA/ROIgrow  ; fi;
+if [ -f SurfDsetInfo    ]; then /bin/rm -f SurfDsetInfo   ; fi;
+if [ -f SUMA/SurfDsetInfo    ]; then /bin/rm -f SUMA/SurfDsetInfo   ; fi;
+if [ -f SurfInfo    ]; then /bin/rm -f SurfInfo   ; fi;
+if [ -f SUMA/SurfInfo    ]; then /bin/rm -f SUMA/SurfInfo   ; fi;
+if [ -f AnalyzeTrace     ]; then /bin/rm -f AnalyzeTrace    ; fi;
+if [ -f SUMA/AnalyzeTrace     ]; then /bin/rm -f SUMA/AnalyzeTrace    ; fi;
+if [ -f DriveSuma     ]; then /bin/rm -f DriveSuma    ; fi;
+if [ -f SUMA/DriveSuma     ]; then /bin/rm -f SUMA/DriveSuma    ; fi;
+if [ -f SurfDist ]; then /bin/rm -f SurfDist; fi;
+if [ -f SUMA/SurfDist ]; then /bin/rm -f SUMA/SurfDist; fi;
+if [ -f SpharmReco ]; then /bin/rm -f SpharmReco; fi;
+if [ -f SUMA/SpharmReco ]; then /bin/rm -f SUMA/SpharmReco; fi;
+if [ -f SpharmDeco ]; then /bin/rm -f SpharmDeco; fi;
+if [ -f SUMA/SpharmDeco ]; then /bin/rm -f SUMA/SpharmDeco; fi;
+if [ -f prompt_user ]; then /bin/rm -f prompt_user; fi;
+if [ -f SUMA/prompt_user ]; then /bin/rm -f SUMA/prompt_user; fi;
+if [ -f prompt_popup ]; then /bin/rm -f prompt_popup; fi;
+if [ -f SUMA/prompt_popup ]; then /bin/rm -f SUMA/prompt_popup; fi;
+if [ -f SurfRetinoMap ]; then /bin/rm -f SurfRetinoMap; fi;
+if [ -f SUMA/SurfRetinoMap ]; then /bin/rm -f SUMA/SurfRetinoMap; fi;
+if [ -f ParseName ]; then /bin/rm -f ParseName; fi;
+if [ -f SUMA/ParseName ]; then /bin/rm -f SUMA/ParseName; fi;
+if [ -f 3dGenPriors ]; then /bin/rm -f 3dGenPriors; fi;
+if [ -f SUMA/3dGenPriors ]; then /bin/rm -f SUMA/3dGenPriors; fi;
+if [ -f 3dGenFeatureDist ]; then /bin/rm -f 3dGenFeatureDist; fi;
+if [ -f SUMA/3dGenFeatureDist ]; then /bin/rm -f SUMA/3dGenFeatureDist; fi;
+if [ -f 3dSeg ]; then /bin/rm -f 3dSeg; fi;
+if [ -f SUMA/3dSeg ]; then /bin/rm -f SUMA/3dSeg; fi;
+if [ -f SurfExtrema ]; then /bin/rm -f SurfExtrema; fi;
+if [ -f SUMA/SurfExtrema ]; then /bin/rm -f SUMA/SurfExtrema; fi;
+if [ -f 3dinfill ]; then /bin/rm -f 3dinfill; fi;
+if [ -f SUMA/3dinfill ]; then /bin/rm -f SUMA/3dinfill; fi;
+if [ -f 3dHist ]; then /bin/rm -f 3dHist; fi;
+if [ -f SUMA/3dHist ]; then /bin/rm -f SUMA/3dHist; fi;
+if [ -f niprobe ]; then /bin/rm -f niprobe; fi;
+if [ -f SUMA/niprobe ]; then /bin/rm -f SUMA/niprobe; fi;
+if [ -f HalloSuma ]; then /bin/rm -f HalloSuma; fi;
+if [ -f SUMA/HalloSuma ]; then /bin/rm -f SUMA/HalloSuma; fi;
+if [ -f InstaTract ]; then /bin/rm -f InstaTract; fi;
+if [ -f SUMA/InstaTract ]; then /bin/rm -f SUMA/InstaTract; fi;
+( cd SUMA ;	\
+rm -f libGLws.a	;\
+make -f SUMA_Makefile libGLws.a 'INSTALLDIR=./linux_openmp_64' \
+'SUMA_INCLUDE_PATH=-IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include' \
+'SUMA_MDEFS=-DSUMA_GL_NO_CHECK_FRAME_BUFFER' \
+'SUMA_BIN_ARCHIVE=SUMA_Linux.tar' \
+'RANLIB=/usr/bin/ranlib' \
+        'NETPBMDIR=/usr/include/netpbm'                                         \
+        'MAKE=make'     \
+'CC=/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ' 'RM=/bin/rm -f' 'CEXTRA=-Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ' 'MV=/bin/mv -f' 'CP=/bin/cp -f'	\
+'TAR=/bin/tar' 'MKDIR=/bin/mkdir';	\
+cd ../	;	\
+if [ ! -d ./linux_openmp_64 ]; then /bin/mkdir -p ./linux_openmp_64; echo WARNING: directory ./linux_openmp_64 has been created. ; fi	;\
+/bin/cp -f SUMA/libGLws.a ./linux_openmp_64; \
+/bin/cp -f SUMA/libGLws.a ./;	)
+make[1]: Entering directory '/home/parallels/afni/src/SUMA'
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -DSUMA_COMPILED  -DSUMA_GL_NO_CHECK_FRAME_BUFFER  -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor \
+	   -o GLw_local/GL/GLwMDrawA.o -c GLw_local/GL/GLwMDrawA.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -DSUMA_COMPILED  -DSUMA_GL_NO_CHECK_FRAME_BUFFER  -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor \
+	   -o GLw_local/GL/GLwDrawA.o -c GLw_local/GL/GLwDrawA.c 
+rm -f libGLws.a
+ar q libGLws.a GLw_local/GL/GLwMDrawA.o GLw_local/GL/GLwDrawA.o
+ar: creating libGLws.a
+echo "library Rebuilt ..."
+library Rebuilt ...
+/usr/bin/ranlib libGLws.a
+cp libGLws.a ../ 
+make[1]: Leaving directory '/home/parallels/afni/src/SUMA'
+WARNING: directory ./linux_openmp_64 has been created.
+( cd SUMA ;	\
+rm -f libSUMA.a	;\
+make -f SUMA_Makefile MarchingCubes.o libSUMA.a 'INSTALLDIR=./linux_openmp_64' \
+'SUMA_MDEFS=-DSUMA_GL_NO_CHECK_FRAME_BUFFER' \
+'SUMA_INCLUDE_PATH=-IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include' \
+'SUMA_BIN_ARCHIVE=SUMA_Linux.tar' \
+'RANLIB=/usr/bin/ranlib' \
+        'NETPBMDIR=/usr/include/netpbm'                                         \
+'MAKE=make'     \
+'MRI_SHARED=' \
+'CC=/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ' 'RM=/bin/rm -f' 'CEXTRA=-Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ' 'MV=/bin/mv -f' 'CP=/bin/cp -f'	\
+'CPU_TYPE=x86_64'                    \
+'TAR=/bin/tar' 'MKDIR=/bin/mkdir';	\
+cd ../	;	\
+if [ ! -d ./linux_openmp_64 ]; then /bin/mkdir -p ./linux_openmp_64; echo WARNING: directory ./linux_openmp_64 has been created. ; fi	;\
+/bin/cp -f SUMA/libSUMA.a ./linux_openmp_64; \
+/bin/cp -f SUMA/libSUMA.a ./;	)
+make[1]: Entering directory '/home/parallels/afni/src/SUMA'
+( cd MarchingCubes ;	\
+  /bin/rm -f mc	debug/*.o;	\
+  make  mc	'CC=/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ';	\
+  /bin/cp -f -p debug/MarchingCubes.o debug/mc_ziad.o .. ; )
+make[2]: Entering directory '/home/parallels/afni/src/SUMA/MarchingCubes'
+mkdir -p debug
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -c MarchingCubes.c -o debug/MarchingCubes.o -g -ggdb -I. -I/usr/include -DDEBUG
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -c mc_ziad.c -o debug/mc_ziad.o -g -ggdb -I. -I/usr/include -DDEBUG
+mc_ziad.c: In function ‘compute_data’:
+mc_ziad.c:197:21: warning: ‘.1D’ directive writing 3 bytes into a region of size between 1 and 200 [-Wformat-overflow=]
+  197 |    sprintf(vname,"%s.1D", vnamepref);
+      |                     ^~~
+mc_ziad.c:197:4: note: ‘sprintf’ output between 4 and 203 bytes into a destination of size 200
+  197 |    sprintf(vname,"%s.1D", vnamepref);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -c main.c -o debug/main.o -g -ggdb -I. -I/usr/include -DDEBUG
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -g -ggdb -o mc debug/MarchingCubes.o debug/mc_ziad.o debug/main.o  -lm 
+make[2]: Leaving directory '/home/parallels/afni/src/SUMA/MarchingCubes'
+( cd PLY ;	\
+  make clean libply.a 'CC=/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ' 'RM=/bin/rm -f' 'RANLIB=/usr/bin/ranlib' 'CCOPT=' 'WARNOPT=' ; \
+  /usr/bin/ranlib libply.a ;	\
+  /bin/cp -f -p libply.a .. ; )
+make[2]: Entering directory '/home/parallels/afni/src/SUMA/PLY'
+/bin/rm -f *.o *.a
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT    -I./ -c plyfile.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT    -I./ -c obj_io.c
+ar q libply.a plyfile.o obj_io.o
+ar: creating libply.a
+/usr/bin/ranlib libply.a
+make[2]: Leaving directory '/home/parallels/afni/src/SUMA/PLY'
+( cd GLUT/libglut ;	\
+  make clean libglut.a 'SUMA_INCLUDE_PATH=-IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor' 'CC=/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT ' 'RM=/bin/rm -f' 'RANLIB=/usr/bin/ranlib' 'CCOPT=' 'WARNOPT=' ; \
+  /usr/bin/ranlib libglut.a ;	\
+     /bin/cp -f -p libglut.a ../.. ; )
+make[2]: Entering directory '/home/parallels/afni/src/SUMA/GLUT/libglut'
+rm -f *.o
+rm -f libglut.a
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_bitmap.o glut_bitmap.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_bwidth.o glut_bwidth.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_cindex.o glut_cindex.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_cursor.o glut_cursor.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_dials.o glut_dials.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_event.o glut_event.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_ext.o glut_ext.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_fullscrn.o glut_fullscrn.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_get.o glut_get.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_init.o glut_init.c
+/usr/bin/gcc -O2  -fPIC -DREAD_WRITE_64 -DLINUX2 -Wcomment -Wformat -DUSE_TRACING -DHAVE_XDBE  -DDONT_USE_XTDESTROY -D_GNU_SOURCE -DREPLACE_XT  -I.. -O -IGLw_local -I. -I/usr/local/afniX/include -I/usr/include -I.. -I../niml -Igts/src -I/usr/include/glib-1.2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I../nifti/nifti2 -I../nifti/niftilib -I../nifti/nifticdf -I../nifti/znzlib -I../3DEdge/src -I../rickr -IGLUT -I../f2c -I.. -I../niml -I../coxplot -I../ptaylor   -c -o glut_input.o glut_input.c
+glut_input.c:21:10: fatal error: X11/extensions/XInput.h: No such file or directory
+   21 | #include <X11/extensions/XInput.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [<builtin>: glut_input.o] Error 1
+make[2]: Leaving directory '/home/parallels/afni/src/SUMA/GLUT/libglut'
+/usr/bin/ranlib: 'libglut.a': No such file
+/bin/cp: cannot stat 'libglut.a': No such file or directory
+make[1]: *** [SUMA_Makefile_NoDev:792: libglut.a] Error 1
+make[1]: Leaving directory '/home/parallels/afni/src/SUMA'
+/bin/cp: cannot stat 'SUMA/libSUMA.a': No such file or directory
+/bin/cp: cannot stat 'SUMA/libSUMA.a': No such file or directory
+make: *** [Makefile.INCLUDE:3851: libSUMA.a] Error 1

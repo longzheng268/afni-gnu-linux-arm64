@@ -305,7 +305,7 @@ all:$(LIBDL) $(LIBMRI_OBJ) libmrix.a libcoxplot.a libtracktools.a $(EXLIBS) \
 
 ### Make afni binaries
 
-afobj:$(AFOBJS) $(LIBF2C_OBJ) libcoxplot.a libmrix.a libjpeg.a libXmHTML.a $(EXLIBS)
+afobj:$(AFOBJS) $(LIBF2C_OBJ) libcoxplot.a libmrix.a -ljpeg -lXmHTML $(EXLIBS)
 
 afobjs: afobj
 
@@ -1866,9 +1866,9 @@ afni_version.o:afni_version.c
 	$(RM) $@
 	$(CC) -c afni_version.c $(INFLAGS) $(SHOWOFF)
 
-afni: $(LIBMRI_OBJ) libcoxplot.a libmrix.a $(EXLIBS) libjpeg.a libXmHTML.a coxplot.h niml.h $(AFOBJS)
+afni: $(LIBMRI_OBJ) libcoxplot.a libmrix.a $(EXLIBS) -ljpeg -lXmHTML coxplot.h niml.h $(AFOBJS)
 	$(RM) $@
-	$(CC) -DWHATS_MY_EXEPATH -o afni $(AFOBJS) $(PLFLAGS) -lmrix -lcoxplot -lmri $(LEXLIBS) libXmHTML.a libjpeg.a $(LLIBS_X11) -lm -lc
+	$(CC) -DWHATS_MY_EXEPATH -o afni $(AFOBJS) $(PLFLAGS) -lmrix -lcoxplot -lmri $(LEXLIBS) -lXmHTML -ljpeg $(LLIBS_X11) -lm -lc
 
 afni+:$(AFOBJS) libcoxplot.a $(LIBMRI_OBJ) libmrix.a coxplot.h niml.h
 	$(RM) $@
@@ -3360,19 +3360,19 @@ mpegtoppm:
 #######
 # 11 Sep 2002 - for fun
 
-# handle existence of libjpeg.a and not cjpeg  [17 Aug 2022 rickr]
-# djpeg:libjpeg.a
-# cjpeg:libjpeg.a
-JPEG_TARGETS = ( libjpeg.a cjpeg djpeg )
+# handle existence of -ljpeg and not cjpeg  [17 Aug 2022 rickr]
+# djpeg:-ljpeg
+# cjpeg:-ljpeg
+JPEG_TARGETS = ( -ljpeg cjpeg djpeg )
 $(JPEG_TARGETS):
 	( cd jpeg-6b ; $(RM) Makefile jconfig.h ;               \
           chmod ugo+x ./configure ; ./configure 'CC=$(CCMIN)' 'LDFLAGS=$(LDFLAGS)' ; \
-          $(MAKE) ; $(MV) cjpeg djpeg libjpeg.a .. ;            \
+          $(MAKE) ; $(MV) cjpeg djpeg -ljpeg .. ;            \
           $(MAKE) clean ; $(RM) Makefile )
 
-libXmHTML.a:
+-lXmHTML:
 	( cd XmHTML ; $(MAKE) lib 'CC=$(CC)' 'II=$(IFLAGS)' ; \
-		$(MV) lib/libXmHTML.a .. ; $(MAKE) clean   )
+		$(MV) lib/-lXmHTML .. ; $(MAKE) clean   )
 
 xutil_webber.o:xutil_webber.c
 	$(CC) -c xutil_webber.c -I./XmHTML/include $(INFLAGS)

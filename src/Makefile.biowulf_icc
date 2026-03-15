@@ -3,7 +3,7 @@
 USE_ZLIB  = -DHAVE_ZLIB
 LZLIB     = -lz
 USE_GIFTI = -DHAVE_GIFTI
-LGIFTI    = /usr/lib64/libexpat.a
+LGIFTI    = -lexpat
 
 # ------------------------------
 # python from C
